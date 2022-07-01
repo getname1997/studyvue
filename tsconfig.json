@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "esModuleInterop": true, // 启动模块化
+    "target": "es2016",
+    "module": "esnext",
+    "noImplicitAny": false, // 是否可以使用any
+    "removeComments": true, // 打包是不是删除注释
+    "preserveConstEnums": true, // 保留枚举常量
+    "sourceMap": true,  // 映射源文件
+    "downlevelIteration": true, // 回退到Symbol.iterator 语法，避免报错
+    "lib": ["es2016", "DOM"],
+    "types": ["jest"],
+    "paths": {
+      "@mini-vue/*": ["packages/*/src"]
+    }
+  },
+    "include": ["packages/*/src", "packages/*/__tests__"]
+}
